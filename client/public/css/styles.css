@@ -1,0 +1,250 @@
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f4f5;
+}
+
+.announce {
+  display: block;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  max-width: 100%;
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.products-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+.products-link {
+  text-decoration: none;
+}
+
+.products-list__item {
+  padding: 12px;
+  width: 290px;
+  background-color: #fff;
+  margin-right: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.product-list__img {
+  display: block;
+  max-width: 100%;
+  margin-right: 0;
+}
+.product-list__info {
+  padding: 8px;
+  color: #333;
+}
+.product-list__name {
+  margin-bottom: 10px;
+  color: #333;
+}
+.product-list__address {
+  margin: 0;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.image-wrapper {
+  padding: 30px;
+  background-color: #fff;
+  margin-right: 30px;
+  border-radius: 6px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.announce-img {
+  width: 530px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.user-info__right {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.user {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #002F34;
+  font-family: 'Arial', 'sans-serif';
+}
+
+.user-names {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.user-number__wrapper {
+  margin-left: 10px;
+}
+
+.user-number {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  font-weight: 700;
+  color: #002F34;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.user-sign {
+  font-size: 14px;
+  line-height: 18px;
+  color: #7F9799;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-user {
+  margin-top: 10px;
+}
+
+.call-user {
+  display: inline-block;
+  line-height: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid rgb(0, 47, 52);
+  border-radius: 4px;
+  color: rgb(0, 47, 52);
+  padding: 8px;
+}
+
+.user-message {
+  display: inline-block;
+  line-height: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(0, 47, 52);
+  border: 5px solid rgb(0, 47, 52);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  padding: 6px;
+}
+
+/* DESCRIPTION SECTION  */
+.description {
+  width: 590px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 25px;
+  padding: 24px;
+}
+
+.placed-post {
+  display: block;
+  line-height: 16px;
+  font-size: 12px;
+  color: #406367;
+  font-family: 'Arial', sans-serif;
+}
+
+.detailed-name {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #002F34;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+.price {
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 16px;
+  font-weight: 700;
+  color: #002F34;
+  font-family: 'Arial', sans-serif;
+}
+.ad {
+  margin-top: 15px;
+}
+
+.reklama {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #002F34;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-right: 22px;
+}
+
+.lift {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #002F34;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.desc-name {
+  font-weight: 700;
+    color: #002F34;
+    margin: 0;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    margin-top: 4px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 16px;
+}
+
+.desc-text {
+  margin: 0;
+  font-size: 16px;
+  color: #002F34;
+  line-height: 22px;
+  font-family: 'Arial', sans-serif;
+}

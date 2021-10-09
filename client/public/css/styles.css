@@ -58,6 +58,7 @@ body {
   margin-bottom: 15px;
 }
 
+
 .product-list__img {
   display: block;
   max-width: 100%;
@@ -247,4 +248,220 @@ body {
   color: #002F34;
   line-height: 22px;
   font-family: 'Arial', sans-serif;
+}
+
+.poster-title {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  color: rgb(0, 47, 52);
+  margin: 48px 0px 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-name {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 32px;
+}
+
+.form-title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: rgb(0, 47, 52);
+  margin: 0px 0px 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input {
+  margin: 0;
+  color: rgb(0, 47, 52);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.inpur-product {
+  background-color: rgb(242, 244, 245);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(242, 244, 245) rgb(242, 244, 245);
+  border-radius: 4px;
+  color: rgb(0, 47, 52);
+  font-size: 16px;
+  line-height: 20px;
+  outline: 0px;
+  padding: 16px 48px 16px 16px;
+  resize: none;
+  width: 680px;
+}
+
+.poster-select {
+  width: 392px;
+  background: rgb(242, 244, 245);
+  border-radius: 4px;
+  border: none;
+  padding: 16px;
+}
+
+.rukn {
+  margin: 0;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(0, 47, 52);
+  margin: 8px 0px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* PHOTOS SECTION  */
+.post-photo {
+ margin-top: 14px;
+ background-color: #fff;
+ padding: 32px;
+ border-radius: 4px;
+}
+
+.post-photo__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgb(0, 47, 52);
+  margin: 0px 0px 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-photo__desc {
+  font-size: 13px;
+  line-height: 14px;
+  color: rgb(127, 151, 153);
+  margin: 0px 0px 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.photo-form {
+  max-width: 685px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-form__group {
+  background-color: rgb(242, 244, 245);
+  width: 159px;
+  height: 120px;
+  padding: 0px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-form__input {
+  opacity: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  cursor: pointer;
+}
+
+.add-photos__text {
+  font-family: 'Arial', sans-serif;
+}
+
+/* DESCRIPTION SECTION  */
+.defination {
+  background-color: #fff;
+  padding: 32px;
+  margin-top: 14px;
+}
+
+.description__title {
+  margin: 0px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(0, 47, 52);
+  font-family: 'Arial', sans-serif;
+}
+
+.description {
+  background-color: rgb(242, 244, 245);
+  border: 2px solid rgb(242, 244, 245);
+  border-radius: 4px;
+  color: rgb(0, 47, 52);
+  font-family: Geomanist;
+  font-size: 16px;
+  line-height: 20px;
+  outline: 0px;
+  padding: 16px 48px 16px 16px;
+  resize: none;
+  width: 685px;
+}
+
+/* CONTACT FOR USER  */
+
+.info-contact {
+  background-color: #fff;
+  margin-top: 14px;
+  padding: 32px;
+}
+
+.info-contact__title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: rgb(0, 47, 52);
+  margin: 0px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 14px;
+}
+
+.location-desc {
+  line-height: 20px;
+  font-size: 13px;
+  color: rgb(0, 47, 52);
+  margin: 8px 0px;
+  font-family: 'Arial', sans-serif;
+}
+
+.location-input {
+  width: 370px;
+  background-color: rgb(242, 244, 245);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  border-bottom: 2px solid rgb(242, 244, 245);
+  border-radius: 4px;
+  line-height: 20px;
+  outline: 0px;
+  padding: 14px 48px 14px 16px;
+}
+
+.form-contact__group {
+  margin-bottom: 14px;
+}
+.btn {
+  padding: 9px;
+  width:200px;
+  margin-left: 70px;
+  border: none;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
 }

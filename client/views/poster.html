@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX Advertising</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="poster-title">E'lon joylashtirish</h1>
+
+    <form class="form-poster" action="http://localhost:5000/add" enctype="multipart/form-data" method="POST">
+      <section class="post-name">
+        <h2 class="form-title">Bizga e'loningi haqida gapirib bering</h2>
+        <div class="input-group">
+          <label>
+            <p class="label-input">Sarlavhani kiriting*</p>
+            <input class="inpur-product" type="text" name="name" aria-label="Product name" placeholder="Masalan, iPhone 11 kafolat bilan" required>
+          </input>
+        </label>
+      </div>
+      <div class="input-group">
+        <label>
+          <p class="label-input">Narx kiriting*</p>
+          <input class="inpur-product" type="text" name="price"  placeholder="Masalan, 100$, 10000so'm" required>
+        </input>
+      </label>
+    </div>
+      <div class="select-group">
+        <p class="rukn">Rukn*</p>
+        <select class="poster-select" name="category_id" required>
+          <option value="Bo'lim">Bo'limni tanlang</option>
+          <option value="1">kampyuterlar</option>
+          <option value="2">telefonlar</option>
+          <option value="4">yengil mashinalar</option>
+          <option value="8">telvizor</option>
+          <option value="7">Uylar</option>
+          <option value="5">mushuklar</option>
+          <option value="6">itlar</option>
+          <option value="3">avtobuslar</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="post-photo">
+      <h2 class="post-photo__title">Rasmlar</h2>
+      <p class="post-photo__desc">Birinchi surat e’loningiz asosiy rasmi bo’ladi. Suratlar tartibini ularning ustiga bosib va olib o’tish bilan o’zgartirishingiz mumkin.</p>
+      <div class="photo-form">
+        <div class="photo-form__group photo-form__group--first">
+          <img src="img/icon-add-camera.svg" alt="image">
+          <input class="photo-form__input" type="file" name="image"   placeholder="Rasm qo'shish" required>
+        </div>
+      </div>
+    </section>
+
+    <section class="defination">
+      <h2 class="visually-hidden">Mahsulot haqida tavsif</h2>
+      <h3 class="description__title">Tavsif*</h3>
+      <textarea class="description" name="reference" autocomplete="off" rows="11" placeholder="O’zingizni shu e'lonni ko’rayotgan odam o’rniga qo’ying va tavsif yozing" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </section>
+  </form>
+</div>
+</body>
+</html>

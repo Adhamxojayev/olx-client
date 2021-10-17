@@ -1,7 +1,6 @@
 (async() => {
 
     let response = await fetch('http://localhost:5000/ads')
-
     let data = await response.json()
     
     for(let ads of data){
@@ -29,11 +28,13 @@
         elon.append(a)
 
         a.onclick = async () => { 
-      
             a.href = `reklama/#${ads.ads_id}`       
         }
 
     }
     
-
 })()
+
+btnSearch.onclick = () => {
+    console.log('ok');
+}

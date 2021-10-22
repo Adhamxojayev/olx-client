@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sotildi</title>
-  <link rel="stylesheet" type="text/css"  href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="register-body">
+
   <header class="site-header">
     <div class="container">
       <div class="site-header__wrapper">
@@ -36,7 +37,7 @@
                     <img src="img/icon-account.svg" alt="" width="40" height="40">
                     <div class="dropdown-item__username">
                       <p class="dropdown-username">username</p>
-                      <span class="dropdown-id">id686513</span>
+                      <span class="dropdown-id">id</span>
                     </div>
                   </div>
                 </li>
@@ -65,23 +66,44 @@
       </div>
     </div>
   </header>
- <div class="container">
-  <h1 class="announce">Faol E'lonlar</h1>
 
-  <form class="prod-search__form" action="http://localhost:5000/search" method="POST">
-    <div class="prod-search__box">
-      <input class="prod-search__input" type="text" name="search" aria-label="E'lonlar qidiruvi" required placeholder="E'lonlar qidiruvi">
-      <button class="prod-search__btn" id="btnSearch">Qidiruv</button>
+  <main class="site-main">
+    <form class="register-form" action="http://localhost:5000/register" method="POST">
+      <div class="register-form__top">
+        <button class="register-signin register-active" type="button">Tizimga kirish</button>
+        <button class="register-signup" type="button">Ro'yaxatdan o'tish</button>
+      </div>
+
+      <div class="register-signin__group sign-in-up-active">
+        <!-- <label class="sigin-label">email pochtangizni kiriting
+        <input class="signin-input" type="email" name="email" aria-label="email for register" placeholder="email kiriting">
+      </label> -->
+
+      <!-- <label class="sigin-label">telefon raqam kirinting
+        <input class="signin-input" type="tel" name="tel" aria-label="Password for register" placeholder="telefon raqam kirinting">
+      </label> -->
     </div>
-  </form>
+    <div class="register-signup__group">
+      <label class="sigin-label">username kiriting
+        <input class="signin-input" type="text" name="name" aria-label="email for register" placeholder="username kiriting">
+      </label>
 
-  <section class="products">
-    <h2 class="visually-hidden">E'lonlar</h2>
-    <ul class="products-list" id="elon">
+      <label class="sigin-label">email pochtangizni kiriting
+      <input class="signin-input" type="email" name="email" aria-label="email for register" placeholder="Email pochtangizni kiriting">
+    </label>
 
-    </ul>
-  </section>
- </div>
- <script src="js/app.js"></script>
+    <label class="sigin-label">telefon raqam kirinting
+      <input class="signin-input" type="tel" name="tel" aria-label="Password for register" placeholder="telefon raqam kirinting">
+    </label>
+  </div>
+
+    <div class="signin-btn__wrapper">
+      <button class="signin-btn" type="submit">Tizimga kirish</button>
+      <button class="signup-btn" type="submit">Ro'yxatdan o'tish</button>
+    </div>
+    </form>
+  </main>
+
+  <script src="js/signup.js"></script>
 </body>
 </html>

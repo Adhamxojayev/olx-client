@@ -8,6 +8,7 @@ const app = express()
 app.use(cookieParser())
 
 
+
 app.use( express.static(path.join(process.cwd(), 'client', 'public')) )
 
 app.get('/', (req, res) => res.sendFile(path.join(process.cwd(), 'client', 'views', 'index.html')))
@@ -20,6 +21,7 @@ app.get('/poster', (req,res) => {
      }
 })
 app.get('/register', (req,res) => res.sendFile(path.join(process.cwd(), 'client', 'views', 'register.html')))
+
 
 
 app.listen(PORT, () => console.log(`server http://localhost:4000`))

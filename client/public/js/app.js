@@ -34,7 +34,3 @@
     }
     
 })()
-
-btnSearch.onclick = () => {
-    console.log('ok');
-}

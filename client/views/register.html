@@ -68,26 +68,31 @@
   </header>
 
   <main class="site-main">
-    <form class="register-form" action="http://localhost:5000/register" method="POST">
+    <div class="register-form" >
       <div class="register-form__top">
         <button class="register-signin register-active" type="button">Tizimga kirish</button>
         <button class="register-signup" type="button">Ro'yaxatdan o'tish</button>
       </div>
 
-      <div class="register-signin__group sign-in-up-active">
-        <!-- <label class="sigin-label">email pochtangizni kiriting
-        <input class="signin-input" type="email" name="email" aria-label="email for register" placeholder="email kiriting">
-      </label> -->
+      <form action="http://localhost:5000/login" method="POST" class="register-signin__group sign-in-up-active">
 
-      <!-- <label class="sigin-label">telefon raqam kirinting
+         <label class="sigin-label">email pochtangizni kiriting
+        <input class="signin-input" type="email" name="email" aria-label="email for register" placeholder="email kiriting">
+      </label>
+
+     <label class="sigin-label">telefon raqam kirinting
         <input class="signin-input" type="tel" name="tel" aria-label="Password for register" placeholder="telefon raqam kirinting">
-      </label> -->
-    </div>
-    <div class="register-signup__group">
+      </label> 
+      <div class="signin-btn__wrapper">
+        <button class="signin-btn" type="submit">Tizimga kirish</button>
+      </div>
+      </form>
+
+    <form class="register-signup__group" action="http://localhost:5000/register" method="POST">
       <label class="sigin-label">username kiriting
         <input class="signin-input" type="text" name="name" aria-label="email for register" placeholder="username kiriting">
       </label>
-
+      
       <label class="sigin-label">email pochtangizni kiriting
       <input class="signin-input" type="email" name="email" aria-label="email for register" placeholder="Email pochtangizni kiriting">
     </label>
@@ -95,13 +100,12 @@
     <label class="sigin-label">telefon raqam kirinting
       <input class="signin-input" type="tel" name="tel" aria-label="Password for register" placeholder="telefon raqam kirinting">
     </label>
-  </div>
-
     <div class="signin-btn__wrapper">
-      <button class="signin-btn" type="submit">Tizimga kirish</button>
-      <button class="signup-btn" type="submit">Ro'yxatdan o'tish</button>
+      <button class="signin-btn" type="submit">Ro'yxatdan o'tish</button>
     </div>
     </form>
+
+  </div>
   </main>
 
   <script src="js/signup.js"></script>

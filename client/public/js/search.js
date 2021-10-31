@@ -1,4 +1,3 @@
-
 searchInput.onkeyup = async (event) => {
     if (event.keyCode == 13) {
         elon.innerHTML = null

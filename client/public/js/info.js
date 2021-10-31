@@ -7,7 +7,7 @@
 
     for(let val of response){
         user_name.textContent = val.name
-        tel_number.textContent = val.tel_number
+        tel_number.textContent = '+' + val.tel_number
         date.textContent = 'joylashtirildi: ' + val.date
         title.textContent = val.title
         reklama_img.src = val.image
